@@ -6,10 +6,16 @@ class CertificatesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Smart Banking"),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
 
-      body: Center(
-              child: Text("Certificates"),
-            )
+      body: Center(child: Text("Certificates")),
     );
   }
 }

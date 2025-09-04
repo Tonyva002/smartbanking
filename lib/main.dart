@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:smartbanking/src/services/services.dart';
 import 'package:smartbanking/src/theme/theme.dart';
 
+import 'src/providers/providers.dart';
 import 'src/router/routes.dart';
 
 void main(){
@@ -19,13 +20,15 @@ class AppState extends StatelessWidget {
     return MultiProvider(
         providers: [
           //Estado global, conexion con firebase
-          ChangeNotifierProvider(create: ( _ ) => AuthService(), )
+          ChangeNotifierProvider(create: ( _ ) => AuthService()),
+          ChangeNotifierProvider(create: ( _ ) => CreditCardsService()),
+          ChangeNotifierProvider(create: ( _ ) => RequestsService()),
+          ChangeNotifierProvider(create: ( _ ) => RequestsFormProvider())
         ],
       child: const MyApp()
     );
   }
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

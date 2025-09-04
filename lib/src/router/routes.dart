@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../model/model.dart';
+import '../models/models.dart';
 import '../screens/screens.dart';
 
 
@@ -20,7 +20,7 @@ class AppRoutes {
     MenuOption(route: "loans", name: "Loans", screen: const LoansScreen(), icon: Icons.account_balance_sharp),
     MenuOption(route: "certificates", name: "Certificates", screen: const CertificatesScreen(), icon: Icons.home_sharp),
     MenuOption(route: "requests", name: "Requests", screen: const RequestsScreen(), icon: Icons.home_sharp),
-    MenuOption(route: "information", name: "Information", screen: const InformationScreen(), icon: Icons.home_sharp)
+
 
 
   ];
