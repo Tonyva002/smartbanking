@@ -25,10 +25,11 @@ VSC O Android Studio
 - Step 1. Download or Clone the repository
 - Step 2. Unzip the file if you have downloaded it
 - Step 3. Open it in Android Studio o VSC
-- Step 4. Create an emulator or connect your physical phone to the pc.
-- Step 5. Give it to run
-- Step 6. Register with a valid email
-- Step 7. Log in
+- Step 4. get dependencies
+- Step 5. Create an emulator or connect your physical phone to the pc.
+- Step 6. Give it to run
+- Step 7. Register with a valid email
+- Step 8. Log in
 
 ## Screenshots
 
