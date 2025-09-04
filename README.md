@@ -45,7 +45,7 @@ VSC O Android Studio
 ![Screen 4](https://github.com/user-attachments/assets/f79cecbe-5511-4bcb-80e5-5734a9d5ecdd)
 
 ### 5)
-![Screen 5](github.com/user-attachments/assets/d1576684-f263-4a1e-84b4-d56844769797)
+![Screen 5](https://github.com/user-attachments/assets/d1576684-f263-4a1e-84b4-d56844769797)
 
 ### 6)
 ![Screen 5](https://github.com/user-attachments/assets/8dd39c8e-fb78-41b0-9b2d-338424849449)
