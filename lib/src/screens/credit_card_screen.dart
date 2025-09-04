@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../services/services.dart';
@@ -114,17 +112,17 @@ class CreditCardScreen extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {},
-                  child: const Text("Realizar Solicitud"),
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   ),
+                  child: const Text("Realizar Solicitud"),
                 ),
                 OutlinedButton(
                   onPressed: () => Navigator.pop(context),
-                  child: const Text("Cerrar"),
                   style: OutlinedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   ),
+                  child: const Text("Cerrar"),
                 ),
               ],
             ),

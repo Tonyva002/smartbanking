@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
 import '../models/models.dart';
 
@@ -7,6 +8,8 @@ class CreditCardsService extends ChangeNotifier {
   final String _baseUrl = 'smartbanking-66658-default-rtdb.firebaseio.com';
   List<Document> cards = [];
   bool isLoading = true;
+
+  final storage = const FlutterSecureStorage();
 
   CreditCardsService() {
     fetchCards();
@@ -16,10 +19,11 @@ class CreditCardsService extends ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    final url = Uri.https(_baseUrl, 'tarjetas_credito.json');
+    final url = Uri.https(_baseUrl, 'tarjetas_credito.json', {
+      'auth': await storage.read(key: 'token') ?? ''
+    });
     final response = await http.get(url);
 
-    print("Respuesta Firebase: ${response.body}");
 
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = json.decode(response.body);

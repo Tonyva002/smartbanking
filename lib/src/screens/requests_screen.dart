@@ -151,7 +151,6 @@ class RequestsScreen extends StatelessWidget {
                         backgroundColor: Colors.blue,
                         padding: const EdgeInsets.symmetric(vertical: 14),
                       ),
-                      // ... dentro del onPressed del botón Continuar
                       onPressed: () async {
                         if (formProvider.isValidForm()) {
                           final newRequest = Request(
@@ -218,8 +217,7 @@ class RequestsScreen extends StatelessWidget {
         return RequestApprovedDialog(
           requestId: requestId,
           onContinue: () {
-            // Navegar a la pantalla de registro
-            Navigator.pushNamed(context, '/register');
+
           },
         );
       },
